@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <link rel='stylesheet' href='static\styles\index.css'/>
+
+    <title>Home Page</title> 
+</head>
+
+
+<body> 
+    <div class='header'>
+        <h1>Car Price App</h1>
+        <p> welcome to our car price prediction app</p>
+    </div>
+
+    <div> 
+        <form action="/predict" method="POST">
+            
+            <label for="wheelbase">wheelbase</label><br>
+            <input type='number' id='wheelbase' name='wheelbase'><br><br>
+
+            <label for="curbweight">Curbweight</label><br>
+            <input type='number' id='curbweight' name='curbweight'><br><br>
+
+            <label for='cylindernumber'>Cylindernumber</label><br>
+            <select id='cylindernumber' name='cylindernumber'>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+                <option value=11>11</option>
+                <option value=12>12</option>
+            </select><br><br>
+
+            <label for="enginesize">Enginesize</label><br>
+            <input type='number' id='enginesize' name='enginesize'><br><br>
+
+            <label for="horsepower">Horsepower</label><br>
+            <input type='number' id='horsepower' name='horsepower'><br><br>
+
+            <label for="highwaympg">Highwaympg</label><br>
+            <input type='number' id='highwaympg' name='highwaympg'><br><br>
+
+            <label for='fueltype'>Fueltype</label><br>
+            <select id='fueltype' name='fueltype'>
+                <option value=gas>gas</option>
+                <option value=diesel>diesel</option>
+            </select><br><br>
+
+            <label for="aspiration">Aspiration</label><br>
+            <select id="aspiration" name="aspiration">
+            <option value="std">std</option>
+            <option value="turbo">turbo</option>
+            </select><br><br>
+
+            <label for="drivewheel">Drivewheel</label><br>
+            <select id="drivewheel" name="drivewheel">
+            <option value="fwd">fwd</option>
+            <option value="rwd">rwd</option>
+            <option value="4wd">4wd</option>
+            </select><br><br>
+
+            <label for="enginetype">Enginetype</label><br>
+            <select id="enginetype" name="enginetype">
+            <option value="dohc">dohc</option>
+            <option value="ohc">ohc</option>
+            <option value="ohcf">ohcf</option>
+            <option value="ohcv">ohcv</option>
+            <option value="rotor">rotor</option>
+            <option value="l">l</option>
+            </select><br><br>
+
+            <input type="Submit" value="Predict"/>
+        </form>
+        
+    </div>
+
+
+</body>
